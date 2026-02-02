@@ -1,7 +1,12 @@
--- Sales cycle analysis
+-- Sales cycle analysis: days from first engagement to close
 SELECT
-  status,
-  AVG(DATEDIFF(close_date, create_date)) AS avg_sales_cycle_days
+  deal_stage,
+  ROUND(
+    AVG(DATEDIFF(close_date, engage_date)),
+    1
+  ) AS avg_sales_cycle_days,
+  COUNT(*) AS deals
 FROM sales_pipeline
 WHERE close_date IS NOT NULL
-GROUP BY status;
+GROUP BY deal_stage
+ORDER BY avg_sales_cycle_days;
