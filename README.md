@@ -119,9 +119,10 @@ poses a risk to near-term revenue targets.
   to enable real-time tactical adjustments by sales leadership.
 
 ## Deliverables
+- **queries.sql**
+  Contains the core logic for data preparation and KPI calculation.
 - **01_pipeline_analysis.ipynb**  
   End-to-end analysis notebook with documented logic and outputs.
-
 - **Dashboard-ready CSV outputs** (generated optionally):
   - `kpi_cards.csv`
   - `funnel_table.csv`
@@ -157,9 +158,9 @@ All calculations are performed using Pandas to mirror common SQL style
 aggregations used in analytics workflows.
 
 ## Tech Stack
-- Python (pandas)
-- Jupyter Notebook
-- Tableau (dashboard consumption via exported CSVs)
+- SQL: Used for initial data exploration and calculating segment-level performance
+- Jupyter Notebook (Pandas): Core data cleaning and KPI aggregation
+- Tableau: (dashboard consumption via exported CSVs) Interactive dashboard design and data storytelling
 
 ## How to Run
 1. Clone the repository
