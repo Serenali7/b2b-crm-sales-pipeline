@@ -8,5 +8,7 @@ SELECT
   COUNT(*) AS deals
 FROM sales_pipeline
 WHERE close_date IS NOT NULL
+  AND engage_date IS NOT NULL
 GROUP BY deal_stage
 ORDER BY avg_sales_cycle_days;
+
