@@ -15,3 +15,4 @@ SELECT
 FROM stage_counts
 ORDER BY deals_in_stage DESC;
 
+
