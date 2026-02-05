@@ -8,3 +8,4 @@ SELECT
   ) AS win_rate,
   ROUND(AVG(amount), 2) AS avg_deal_size
 FROM sales_pipeline;
+
