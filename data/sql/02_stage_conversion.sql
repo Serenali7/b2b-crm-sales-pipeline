@@ -13,5 +13,5 @@ SELECT
   won_deals,
   ROUND(won_deals * 1.0 / deals_in_stage, 4) AS win_rate_in_stage
 FROM stage_counts
-ORDER BY deals_in_stage DESC；
+ORDER BY deals_in_stage DESC;
 
